@@ -1,0 +1,39 @@
+# input
+img_bq_url: "/path/to/bq_query.csv"
+img_bq_conv: "/path/to/crosswalk_table.csv"
+rad_report_path: "/path/to/radiology_report.txt"
+pat_report_path: "/path/to/pathology_report.txt"
+slicer_ouputs_path: "/path/to/slicer_outputs/"
+
+# processing params
+minimum_date_considered: "MM/DD/YYYY"
+to_be_extracted_mods: ["AX_T2", "AX_DWI_1400", "Apparent_D_nt__mm2_s_"]
+image_dir_path: "/path/to/image_directory/"
+d_metrics: "cosine"
+# Models used for:
+# 1) Seriesdescription extraction and matching of histopathology results with target coordinates (via anatomical regions)
+# 2) Extraction of preprocedural diagnoses (PIRADS, lesion diameter) and matching of diagnoses with target coordinates (via anatomical regions)
+models: ["emilyalsentzer/Bio_ClinicalBERT", "facebook/bart-large-mnli"]
+thresholds: [0.7, 0.5] #correspond to model list
+label_augmentation: ["series_descr_augmentation", "d_section_augmentation"]
+candidates_pi_rads:
+  ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"]
+
+# export options
+dcm_sr_types: ["point", "bbox"]
+img_export_dtype: ["dcm", "nifti", "mha"]
+annotation_export_dtype: ["dcm", "nifti"]
+# try with v5 (for SliceLocation) and v6 with propper projection! -> if not working look at slicer!
+imgs_output_dirs:
+  [
+    "/path/to/output/ohif/01_dcm_imgs_baseline",
+    "/path/to/output/ohif/02_dcm_imgs_baseline",
+  ]
+annotations_output_dirs:
+  [
+    "/path/to/output/ohif/01_dcm_srs_baseline/dcm_point_srs",
+    "/path/to/output/ohif/01_dcm_srs_baseline/dcm_bbox_srs",
+  ]
+
+# output
+output_root_path: ""
