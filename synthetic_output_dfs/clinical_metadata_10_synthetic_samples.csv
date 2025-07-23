@@ -1,0 +1,12 @@
+patient_id,study_id,patient_age,race,ethnicity,recent_psa,prostate_volume,recent_prior_biopsies,pca3,prior_therapy,vital_status,histopath_type,point_annotation,bbox_annotation,case_cspca,pos,a_region,a_description,pi_rads,lesion_size,lesion_gs,lesion_isup
+DEMO_001,MRI_001,67,Caucasian,Non-Hispanic,12.4,58.2,negative,,none,alive,MRBx,YES,YES,YES,-15.2 -22.8 45.1,LPZpmMid,LEFT PERIPHERAL ZONE POSTERIOR MEDIAL MID,4.0,8.5,3+4=7,Grade Group 2
+DEMO_002,MRI_002,71,African American,Non-Hispanic,8.9,42.1,3+3=6,,none,alive,MRBx,YES,YES,NO,12.7 -18.4 -12.3,RPZplBase,RIGHT PERIPHERAL ZONE POSTERIOR LATERAL BASE,3.0,6.2,3+3=6,Grade Group 1
+DEMO_003,MRI_003,59,Caucasian,Non-Hispanic,5.8,73.4,negative,,none,alive,MRBx,YES,NO,NO,8.1 -25.6 28.9,RTZaApex,RIGHT TRANSITION ZONE ANTERIOR APEX,2.0,,benign,benign
+DEMO_004,MRI_004,63,Asian,Non-Hispanic,18.7,39.8,negative,,none,alive,MRBx,YES,YES,YES,-22.3 -35.1 -8.7,LPZplApex,LEFT PERIPHERAL ZONE POSTERIOR LATERAL APEX,5.0,12.1,4+4=8,Grade Group 4
+DEMO_005,MRI_005,69,Hispanic,Hispanic,7.2,91.3,3+3=6,,radiation,alive,MRBx,YES,YES,NO,5.4 -12.7 52.8,RPZpmMid,RIGHT PERIPHERAL ZONE POSTERIOR MEDIAL MID,3.0,4.8,3+3=6,Grade Group 1
+DEMO_006,MRI_006,74,Caucasian,Non-Hispanic,22.1,48.7,negative,,none,alive,MRBx,YES,YES,YES,-8.9 -28.3 -15.2,LTZpBase,LEFT TRANSITION ZONE POSTERIOR BASE,4.0,10.3,3+4=7,Grade Group 2
+DEMO_007,MRI_007,56,African American,Non-Hispanic,4.3,67.9,negative,,none,alive,MRBx,YES,NO,NO,18.6 -8.4 31.5,RPZalMid,RIGHT PERIPHERAL ZONE ANTERIOR LATERAL MID,2.0,,benign,benign
+DEMO_008,MRI_008,65,Caucasian,Non-Hispanic,14.8,55.1,3+4=7,,surgery,alive,MRBx,YES,YES,YES,-12.8 -19.7 -22.4,LPZpmApex,LEFT PERIPHERAL ZONE POSTERIOR MEDIAL APEX,4.0,9.7,4+3=7,Grade Group 3
+DEMO_009,MRI_009,61,Asian,Non-Hispanic,9.6,62.3,negative,,none,alive,MRBx,YES,YES,NO,24.1 -31.2 18.6,RPZplBase,RIGHT PERIPHERAL ZONE POSTERIOR LATERAL BASE,3.0,5.9,3+3=6,Grade Group 1
+DEMO_010,MRI_010,70,Hispanic,Hispanic,11.2,44.6,negative,,none,alive,MRBx,YES,YES,YES,-6.7 -22.9 41.3,LPZpmMid,LEFT PERIPHERAL ZONE POSTERIOR MEDIAL MID,5.0,14.2,4+5=9,Grade Group 5
+
